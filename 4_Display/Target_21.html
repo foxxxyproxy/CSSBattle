@@ -1,0 +1,36 @@
+<body bgcolor="#222">
+  <p></p>
+  <p></p>
+</body>
+
+<style>
+  body {
+    margin: 119px 123px;
+  }
+
+  p {
+    position: absolute;
+    width: 50;
+    border: 15px solid #f2994a;
+    border-radius: 0 5px 0 10px;
+    transform: rotate(45deg);
+  }
+  p::after {
+    position: inherit;
+    content: "";
+    width: 50;
+    border: 15px solid #f2994a;
+    transform: rotate(90deg);
+    top: -60;
+    left: -40;
+  }
+
+  p + p {
+    border-color: #2d9cdb;
+    transform: rotate(225deg);
+    right: 125px;
+  }
+  p + p::after {
+    border-color: #2d9cdb;
+  }
+</style>
