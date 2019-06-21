@@ -1,0 +1,44 @@
+<body>
+  <div id="f">
+    <p></p>
+    <p></p>
+  </div>
+
+  <div id="s">
+    <p></p>
+    <p></p>
+  </div>
+</body>
+<style>
+  body {
+    background: #f2f2b6;
+  }
+
+  div p {
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 130px solid #ff6d00;
+    display: inline-block;
+    position: relative;
+  }
+
+  #f {
+    transform: rotate(180deg);
+    left: 60px;
+  }
+
+  div p:first-child {
+    border-bottom-color: #fd4602;
+    left: 130px;
+  }
+
+  #s p:last-child {
+    z-index: -1;
+  }
+
+  body > div {
+    position: absolute;
+    top: 69px;
+    left: 40px;
+  }
+</style>
