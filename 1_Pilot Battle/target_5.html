@@ -1,0 +1,30 @@
+<body>
+  <div></div>
+</body>
+<style>
+  body {
+    background: #0b2429;
+  }
+
+  div {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 60px solid #f3ac3c;
+    border-radius: 50%;
+    right: 80px;
+    top: 30px;
+  }
+
+  div::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 60px solid #f3ac3c;
+    border-radius: 50% 0 50% 50%;
+    right: 60px;
+    top: 60px;
+    box-shadow: 60px -60px 0 0 #998235;
+  }
+</style>

@@ -1,0 +1,26 @@
+<body>
+  <div></div>
+  <div></div>
+  <div></div>
+</body>
+<style>
+  body {
+    height: 100%;
+    margin: 50px 50px;
+    background: #62306d;
+    display: flex;
+    align-items: center;
+  }
+
+  div {
+    width: 0;
+    height: 0;
+    border: 50px solid #f7ec7d;
+    border-radius: 0 0 50% 50%;
+  }
+
+  div:nth-of-type(2) {
+    border-radius: 50% 50% 0 0;
+    align-self: flex-start;
+  }
+</style>
